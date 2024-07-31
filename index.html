@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Solutions Inc.</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+#welcome {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); 
+    color: #fff; 
+    padding: 60px 0; 
+}
+
+#welcome h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+#welcome p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#welcome p b {
+    font-size: 1.2rem;
+}
+
+.welcome-content p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 15px; 
+}
+
+#welcome .btn {
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    border-radius: 25px;
+    background: #fff;
+    color: #ff7e5f;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#welcome .btn:hover {
+    background: #ff7e5f;
+    color: #fff;
+}
+
+         #hero {
+            background-image: url('hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+            color: #fff; 
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
+        }
+ #hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); 
+            z-index: 1;
+        }
+ #hero .container {
+            position: relative;
+            z-index: 2;
+        }
+ #hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease-in-out;
+        }
+#hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease-in-out;
+        }
+#hero .btn {
+            padding: 10px 30px;
+            font-size: 1.2rem;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+         #services {
+            background-color: #f8f9fa; 
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .service-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+            transition: all 0.3s ease-in-out;
+        }
+        .service-card:hover {
+            background-color: #007bff; 
+            color: #fff; 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+            transform: translateY(-10px); 
+        }
+         .service-icon {
+            font-size: 3rem;
+            color: #007bff; 
+            margin-bottom: 15px;
+        }
+        .service-card:hover .service-icon {
+            color: #fff;
+        }
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-top: 15px;
+        }
+        .service-card p {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+        #services h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    background: linear-gradient(90deg, rgba(255,153,51,1) 0%, rgba(255,94,0,1) 100%);
+    -webkit-background-clip: text; 
+    -moz-background-clip: text;
+    -ms-background-clip: text; 
+    background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+    #services h2:hover {
+    transform: scale(1.05);
+       }
+ /* Custom CSS for hover effect */
+    #testimonials h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    background: linear-gradient(90deg, rgba(51,153,255,1) 0%, rgba(0,94,255,1) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+      #testimonials h2:hover {
+    transform: scale(1.05);
+          }
+
+        .testimonial {
+            transition: all 0.3s ease-in-out;
+        }
+        .testimonial:hover {
+            background-color: #ee5656; 
+            box-shadow: 0 4px 8px rgba(35, 22, 22, 0.2); 
+        }
+        #testimonials {
+            background-color: #f8f9fa; 
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        .testimonial {
+            transition: all 0.3s ease-in-out;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial:hover {
+            background-color: #e9ecef; 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+        }
+        .testimonial h3 {
+            font-size: 1.25rem;
+            color: #007bff; 
+        }
+        .testimonial p {
+            font-style: italic;
+        }
+        .testimonial-icon {
+            font-size: 3rem;
+            color: #007bff; 
+            margin-bottom: 15px;
+        }
+        .pb-5 {
+            padding-bottom: 3rem;
+        }
+        /*contact*/
+        #contact {
+         background: linear-gradient(to right, #0066cc, #003366); 
+         color: #fff; 
+         padding: 60px 0; 
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+#contact .form-group input, 
+#contact .form-group textarea {
+    background: rgba(255, 255, 255, 0.1); 
+    border: none;
+    border-radius: 10px;
+    color: #fff; 
+    padding: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+#contact .form-group input::placeholder, 
+#contact .form-group textarea::placeholder {
+    color: #ddd; 
+}
+
+#contact .form-group input:focus, 
+#contact .form-group textarea:focus {
+    background: rgba(255, 255, 255, 0.2); 
+    color: #fff; 
+}
+
+#contact .btn {
+    background: #fff;
+    color: #0066cc;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#contact .btn:hover {
+    background: #0066cc;
+    color: #fff;
+}
+
+#contact .contact-details {
+    margin-top: 20px;
+}
+
+#contact .contact-details p {
+    margin: 5px 0;
+    font-size: 1.1rem;
+}
+
+#contact.contact-details a {
+    color: #fff;
+    text-decoration: underline;
+}
+footer {
+    background: linear-gradient(to right, #343a40, #212529); 
+    color: #fff; 
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0; 
+}
+
+footer .social-icons a {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 10px;
+    
+}
+footer .social-icons a:hover {
+    color: #007bff;
+}
+</style>
+</head>
+<body>
+    <!-- Sticky Header -->
+    <header class="bg-dark text-white sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <a class="navbar-brand" href="#">Tech Solutions Inc.</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Custom Welcome Section -->
+<section id="welcome" class="d-flex align-items-center text-center bg-light">
+    <div class="container">
+        <div class="welcome-content">
+            <h1>Welcome to Your Business</h1>
+            <p><b>We provide innovative solutions to help your business grow.</b></p>
+            <p>19+ Years Of Strategic Digital Marketing Services</p>
+            <p>The Tech Solution Inc team comprises skilled digital strategists who specialize in various domains such as SEO, Paid Media, Social Media, Creative Design, Website Development, and Digital Consulting. Our primary aim is to enhance your online visibility across multiple digital channels and elevate your brand reputation in the market.</p>
+            <p>We leverage top-of-the-line tools and cutting-edge strategies to craft bespoke digital strategies tailored to your business/brand. Our approach is highly targeted and performance-driven, with a focus on maximizing digital conversions, acquiring new customers, and delivering a profitable ROI.</p>
+            <p>Expert Analysis: Our in-house Digital Marketing software and deep understanding of your business and digital marketing goals to formulate customized and brand-specific digital strategies gives us the competitive advantage and the best in the industry!</p>
+            <p>Brand Strategy: Brand strategy that includes the complete branding package - designing, positioning, brand architecture, creating brand value and much more.</p>
+            <p>Campaign Strategy: Channel-specific and platform-specific campaign strategies that are personalized according to your goals, budget, and timelines.</p>
+            <p>Technical Strategy: Technical roadmap creation includes website audit & development, social media audits, device and analysis, and audience audits.</p>
+            <a href="#services" class="btn btn-primary">Learn More</a>
+        </div>
+    </div>
+</section>
+
+
+   <!-- Hero Section -->
+   <section id="hero" class="d-flex align-items-center text-center bg-image mt-0">
+    <div class="container">
+        <h1>Innovative Solutions for Your Business Needs</h1>
+        <p>Transforming ideas into reality with cutting-edge technology.</p>
+        <a href="#contact" class="btn btn-primary">Get Started</a>
+    </div>
+</section>
+
+        <!-- Services Section -->
+<section id="services" class="py-5">
+    <div class="container text-center">
+        <h2 class="pb-5">Our Services</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="service-card">
+                    <div class="service-icon">🖥️</div>
+                    <h3>Software Development</h3>
+                    <p>Custom software solutions tailored to your business.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3>IT Consulting</h3>
+                    <p>Expert advice to optimize your IT infrastructure.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="service-card">
+                    <div class="service-icon">🔒</div>
+                    <h3>Cybersecurity</h3>
+                    <p>Protecting your digital assets from cyber threats.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="service-card">
+                    <div class="service-icon">☁️</div>
+                    <h3>Cloud Solutions</h3>
+                    <p>Scalable and secure cloud services for your business.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- Testimonials Section -->
+<section id="testimonials" class="py-5">
+    <div class="container text-center">
+        <h2 class="pb-5">What Our Clients Say</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="testimonial p-4 mb-4 border border-primary rounded">
+                    <div class="testimonial-icon">🌟</div>
+                    <p class="mb-2">"Tech Solutions Inc. transformed our business operations."</p>
+                    <h3>Client 1</h3>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial p-4 mb-4 border border-primary rounded">
+                    <div class="testimonial-icon">🌟</div>
+                    <p class="mb-2">"Exceptional service and innovative solutions."</p>
+                    <h3>Client 2</h3>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial p-4 mb-4 border border-primary rounded">
+                    <div class="testimonial-icon">🌟</div>
+                    <p class="mb-2">"Their cybersecurity services are top-notch."</p>
+                    <h3>Client 3</h3>
+                </div>
+            </div>
+        </div>
+   </div>
+</section>
+
+
+   <!-- Contact Section -->
+<section id="contact" class="py-5 bg-primary text-white">
+    <div class="container text-center">
+        <h2 class="pb-4">Get in Touch</h2>
+        <form>
+            <div class="form-group mb-3">
+                <input type="text" class="form-control" id="name" placeholder="Name" required>
+            </div>
+            <div class="form-group mb-3">
+                <input type="email" class="form-control" id="email" placeholder="Email" required>
+            </div>
+            <div class="form-group mb-3">
+                <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mb-4">
+                <textarea class="form-control" id="message" placeholder="Message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-light btn-lg">Submit</button>
+            </form>
+        <div class="contact-details mt-4">
+            <p>Address: 123 Tech Street, Innovation City, Techland</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Email: <a href="mailto:info@techsolutions.com" class="text-white">info@techsolutions.com</a></p>
+        </div>
+    </div>
+</section>
+
+
+   <!-- Footer -->
+   <footer class="bg-dark text-white text-center py-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <p>&copy; 2024 Tech Solutions Inc. All rights reserved.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="social-icons">
+                    <a href="#" class="text-red mx-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-red mx-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-red mx-2"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-red mx-2"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
